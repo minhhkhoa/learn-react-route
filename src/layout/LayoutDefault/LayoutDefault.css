@@ -1,0 +1,69 @@
+
+.layout-default__header {
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.layout-default__main {
+  padding: 20px;
+
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+}
+
+.menu ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.menu ul li .menu__link {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+/* khi dc active thi doi mau */
+.menu ul li .menu__link--active{
+  color: #fff;
+}
+
+.layout-default__footer {
+  background: orange;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.menu__sub {
+  position: absolute;
+  top: 100%;
+  background-color: rgb(177, 124, 27);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  display: none !important;
+}
+
+.blog:hover > .menu__sub {
+  display: flex !important;
+}
+
+.menu__sub li {
+  margin-left: 0 !important;
+}
+
+.menu__sub a{
+  white-space: nowrap;
+  display: block;
+  padding: 4px 10px;
+}
+
